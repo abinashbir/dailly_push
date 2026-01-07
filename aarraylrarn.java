@@ -1,14 +1,22 @@
+
+import java.util.Scanner;
+
 public class aarraylrarn {
     public static void main(String[] args) {
-        // Syntax for array is datatype[] variable_name = new datatype[size]
-        
+      
+        int[] students = new int[10];
+        int size = students.length;
+        Scanner sc = new Scanner(System.in);
 
-        int[] rollsq ={1,2,3,4,5};
-        int size = rollsq.length;
-
-
-        for (int i = 0; i < size; i++) {
-            System.out.println(rollsq[i]);
+        for(int i = 0;i<size;i++){            
+            System.out.print("Enter the number : ");
+            students[i]=sc.nextInt();
         }
+
+        for(int i = 0;i<size;i++){
+            System.out.println(students[i]);
+        }
+        sc.close();
     }
+    
 }
